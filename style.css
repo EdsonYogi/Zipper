@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 30px;
+    color: #fdff73;
+    font-weight: 100;
+}
+
+P {
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+}
+
+.nav {
+    background-image: url("../Zipper/img/image-01.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.menubar {
+        visibility: hidden;
+        position: absolute;
+        top: -20px;
+}
+
+.menu {
+    visibility: visible;
+    display: flex;
+    padding: 20px 25% 20px 25%;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);  
+}
+
+.menu li {
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: #fdff73;
+}
+.menu i {
+    visibility: hidden;
+}
+
+.title {
+    text-align: center;
+    padding: 275px;
+    color: white;
+    line-height: 1.5;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.title h1 {
+    color: white;
+    font-size: 50px;
+}
+
+/*ABOUT*/
+
+.about {
+    background-image: url("../Zipper/img/image-02.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.about .content {
+    width: 450px;
+    height: 100%;
+    text-align: justify;
+    color: white;
+    line-height: 1.5;
+    margin-left: 56.5%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.about .content h1, p {
+    margin-bottom: 30px;
+}
+.about .content h1 {
+    margin-top: 50px;
+}
+
+/*SERVICES*/
+
+.services {
+    background-image: url("../Zipper/img/image-03.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.services .content {
+    width: 450px;
+    height: auto;
+    text-align: justify;
+    color: white;
+    line-height: 1.5;
+    margin-left: 18.5%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.services .content h1, p {
+    margin-bottom: 30px;
+}
+.services .content h1 {
+    margin-top: 50px;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials {
+    background-image: url("../Zipper/img/image-04.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.testimonials .content {
+    text-align: center;
+}
+
+.content1 {
+    display: inline-block;
+    font: 14px/1 FontAwesome;
+    width: 350px;
+    height: 375px;
+    color: white;
+    line-height: 1.5;
+    margin: 15px 15px 100px 15px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content1 i {
+    font-style: normal;
+    font-size: 4em;
+}
+
+.content1 p {
+    text-align: justify;
+    padding-top: 40px;
+}
+
+.testimonials .content h1 {
+    color: black;
+    padding: 50px 0 20px 0;
+}
+
+/*CONTACT*/
+
+.contact {
+    background-image: url("../Zipper/img/image-05.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.contact .content {
+    display: inline-block;
+    width: 450px;
+    height: 100%;
+    text-align: justify;
+    color: white;
+    margin-left: 56.5%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact .content h1, p {
+    margin-bottom: 30px;
+}
+.contact .content h1 {
+    margin-top: 50px;
+}
+
+.name, .email, .message, button {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0,0,0,.15);
+    color: white;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.message {
+    height: 150px;
+}
+
+.button {
+    width: 30%;
+}
+
+.copyright p {
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    margin: 11px 0 0 0 ;
+    padding: 15px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px){
+
+    h1 {
+        text-align: center;
+    }
+
+    P {
+        font-size: 20px;
+        text-align: initial;
+    }
+
+    .home .menubar {
+        font:14px/1 FontAwesome;
+        font-style: normal;
+        text-align: center;
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        visibility: visible;
+        position: fixed;
+        width: 100%;
+        margin-top: 20px;
+
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    .home .menubar:hover {
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+
+    .menubar:hover .menu {
+        visibility: visible;
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin-top:10px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        left: 0;
+        height: auto;
+    }
+
+    .menubar:hover .menu li {
+        visibility: visible;
+        padding: 7.5px;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .title {
+        margin: 0 auto;
+        padding: 200px 0 200px 0;
+    }
+
+    .title p {
+        text-align: center;
+    }
+
+    /*ABOUt*/
+   
+
+    .about {
+        height: auto;
+    }
+
+    .about .content {
+        margin: 0;
+        width: 100%;
+    }
+
+    /*SERVICES*/
+
+    .services {
+        height: auto;
+    }
+
+    .services .content {
+        margin: 0;
+        width: 100%;
+    }
+
+    /*TESTIMONIALS*/
+
+    .testimonials {
+        height: auto;
+    }
+
+    .testimonials .content {
+        padding-bottom: 75px;
+    }
+
+    .content1 {
+        display: block;
+        font: 14px/1 FontAwesome;
+        width: auto;
+        height: auto;
+        color: white;
+        line-height: 1.5;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 50px;
+        margin: 0 0 40px 0;
+    }
+
+    .content1 i {
+        font-size:3.5em;
+    }
+
+    /*CONTACT*/
+
+    .contact .content {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        height: 100%;
+    }
+
+    .copyright p {
+        font-size: 15px;
+    }
+}
